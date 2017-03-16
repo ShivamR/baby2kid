@@ -11773,7 +11773,7 @@ Run the code cell below to load our data and display the first few entries (pass
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[82]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Import libraries necessary for this project</span>
@@ -11792,7 +11792,7 @@ Run the code cell below to load our data and display the first few entries (pass
 <span class="n">full_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">in_file</span><span class="p">)</span>
 
 <span class="c1"># Print the first few entries of the RMS Titanic data</span>
-<span class="n">display</span><span class="p">(</span><span class="n">full_data</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">full_data</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
 </pre></div>
 
 </div>
@@ -11901,849 +11901,8 @@ Run the code cell below to load our data and display the first few entries (pass
       <td>NaN</td>
       <td>S</td>
     </tr>
-    <tr>
-      <th>5</th>
-      <td>6</td>
-      <td>0</td>
-      <td>3</td>
-      <td>Moran, Mr. James</td>
-      <td>male</td>
-      <td>NaN</td>
-      <td>0</td>
-      <td>0</td>
-      <td>330877</td>
-      <td>8.4583</td>
-      <td>NaN</td>
-      <td>Q</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>7</td>
-      <td>0</td>
-      <td>1</td>
-      <td>McCarthy, Mr. Timothy J</td>
-      <td>male</td>
-      <td>54.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>17463</td>
-      <td>51.8625</td>
-      <td>E46</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>8</td>
-      <td>0</td>
-      <td>3</td>
-      <td>Palsson, Master. Gosta Leonard</td>
-      <td>male</td>
-      <td>2.0</td>
-      <td>3</td>
-      <td>1</td>
-      <td>349909</td>
-      <td>21.0750</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>9</td>
-      <td>1</td>
-      <td>3</td>
-      <td>Johnson, Mrs. Oscar W (Elisabeth Vilhelmina Berg)</td>
-      <td>female</td>
-      <td>27.0</td>
-      <td>0</td>
-      <td>2</td>
-      <td>347742</td>
-      <td>11.1333</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>10</td>
-      <td>1</td>
-      <td>2</td>
-      <td>Nasser, Mrs. Nicholas (Adele Achem)</td>
-      <td>female</td>
-      <td>14.0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>237736</td>
-      <td>30.0708</td>
-      <td>NaN</td>
-      <td>C</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>11</td>
-      <td>1</td>
-      <td>3</td>
-      <td>Sandstrom, Miss. Marguerite Rut</td>
-      <td>female</td>
-      <td>4.0</td>
-      <td>1</td>
-      <td>1</td>
-      <td>PP 9549</td>
-      <td>16.7000</td>
-      <td>G6</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>12</td>
-      <td>1</td>
-      <td>1</td>
-      <td>Bonnell, Miss. Elizabeth</td>
-      <td>female</td>
-      <td>58.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>113783</td>
-      <td>26.5500</td>
-      <td>C103</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>13</td>
-      <td>0</td>
-      <td>3</td>
-      <td>Saundercock, Mr. William Henry</td>
-      <td>male</td>
-      <td>20.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>A/5. 2151</td>
-      <td>8.0500</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>14</td>
-      <td>0</td>
-      <td>3</td>
-      <td>Andersson, Mr. Anders Johan</td>
-      <td>male</td>
-      <td>39.0</td>
-      <td>1</td>
-      <td>5</td>
-      <td>347082</td>
-      <td>31.2750</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>15</td>
-      <td>0</td>
-      <td>3</td>
-      <td>Vestrom, Miss. Hulda Amanda Adolfina</td>
-      <td>female</td>
-      <td>14.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>350406</td>
-      <td>7.8542</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>16</td>
-      <td>1</td>
-      <td>2</td>
-      <td>Hewlett, Mrs. (Mary D Kingcome)</td>
-      <td>female</td>
-      <td>55.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>248706</td>
-      <td>16.0000</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>17</td>
-      <td>0</td>
-      <td>3</td>
-      <td>Rice, Master. Eugene</td>
-      <td>male</td>
-      <td>2.0</td>
-      <td>4</td>
-      <td>1</td>
-      <td>382652</td>
-      <td>29.1250</td>
-      <td>NaN</td>
-      <td>Q</td>
-    </tr>
-    <tr>
-      <th>17</th>
-      <td>18</td>
-      <td>1</td>
-      <td>2</td>
-      <td>Williams, Mr. Charles Eugene</td>
-      <td>male</td>
-      <td>NaN</td>
-      <td>0</td>
-      <td>0</td>
-      <td>244373</td>
-      <td>13.0000</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>18</th>
-      <td>19</td>
-      <td>0</td>
-      <td>3</td>
-      <td>Vander Planke, Mrs. Julius (Emelia Maria Vande...</td>
-      <td>female</td>
-      <td>31.0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>345763</td>
-      <td>18.0000</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>19</th>
-      <td>20</td>
-      <td>1</td>
-      <td>3</td>
-      <td>Masselmani, Mrs. Fatima</td>
-      <td>female</td>
-      <td>NaN</td>
-      <td>0</td>
-      <td>0</td>
-      <td>2649</td>
-      <td>7.2250</td>
-      <td>NaN</td>
-      <td>C</td>
-    </tr>
-    <tr>
-      <th>20</th>
-      <td>21</td>
-      <td>0</td>
-      <td>2</td>
-      <td>Fynney, Mr. Joseph J</td>
-      <td>male</td>
-      <td>35.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>239865</td>
-      <td>26.0000</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>21</th>
-      <td>22</td>
-      <td>1</td>
-      <td>2</td>
-      <td>Beesley, Mr. Lawrence</td>
-      <td>male</td>
-      <td>34.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>248698</td>
-      <td>13.0000</td>
-      <td>D56</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>22</th>
-      <td>23</td>
-      <td>1</td>
-      <td>3</td>
-      <td>McGowan, Miss. Anna "Annie"</td>
-      <td>female</td>
-      <td>15.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>330923</td>
-      <td>8.0292</td>
-      <td>NaN</td>
-      <td>Q</td>
-    </tr>
-    <tr>
-      <th>23</th>
-      <td>24</td>
-      <td>1</td>
-      <td>1</td>
-      <td>Sloper, Mr. William Thompson</td>
-      <td>male</td>
-      <td>28.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>113788</td>
-      <td>35.5000</td>
-      <td>A6</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>24</th>
-      <td>25</td>
-      <td>0</td>
-      <td>3</td>
-      <td>Palsson, Miss. Torborg Danira</td>
-      <td>female</td>
-      <td>8.0</td>
-      <td>3</td>
-      <td>1</td>
-      <td>349909</td>
-      <td>21.0750</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>25</th>
-      <td>26</td>
-      <td>1</td>
-      <td>3</td>
-      <td>Asplund, Mrs. Carl Oscar (Selma Augusta Emilia...</td>
-      <td>female</td>
-      <td>38.0</td>
-      <td>1</td>
-      <td>5</td>
-      <td>347077</td>
-      <td>31.3875</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>26</th>
-      <td>27</td>
-      <td>0</td>
-      <td>3</td>
-      <td>Emir, Mr. Farred Chehab</td>
-      <td>male</td>
-      <td>NaN</td>
-      <td>0</td>
-      <td>0</td>
-      <td>2631</td>
-      <td>7.2250</td>
-      <td>NaN</td>
-      <td>C</td>
-    </tr>
-    <tr>
-      <th>27</th>
-      <td>28</td>
-      <td>0</td>
-      <td>1</td>
-      <td>Fortune, Mr. Charles Alexander</td>
-      <td>male</td>
-      <td>19.0</td>
-      <td>3</td>
-      <td>2</td>
-      <td>19950</td>
-      <td>263.0000</td>
-      <td>C23 C25 C27</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>28</th>
-      <td>29</td>
-      <td>1</td>
-      <td>3</td>
-      <td>O'Dwyer, Miss. Ellen "Nellie"</td>
-      <td>female</td>
-      <td>NaN</td>
-      <td>0</td>
-      <td>0</td>
-      <td>330959</td>
-      <td>7.8792</td>
-      <td>NaN</td>
-      <td>Q</td>
-    </tr>
-    <tr>
-      <th>29</th>
-      <td>30</td>
-      <td>0</td>
-      <td>3</td>
-      <td>Todoroff, Mr. Lalio</td>
-      <td>male</td>
-      <td>NaN</td>
-      <td>0</td>
-      <td>0</td>
-      <td>349216</td>
-      <td>7.8958</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>861</th>
-      <td>862</td>
-      <td>0</td>
-      <td>2</td>
-      <td>Giles, Mr. Frederick Edward</td>
-      <td>male</td>
-      <td>21.0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>28134</td>
-      <td>11.5000</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>862</th>
-      <td>863</td>
-      <td>1</td>
-      <td>1</td>
-      <td>Swift, Mrs. Frederick Joel (Margaret Welles Ba...</td>
-      <td>female</td>
-      <td>48.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>17466</td>
-      <td>25.9292</td>
-      <td>D17</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>863</th>
-      <td>864</td>
-      <td>0</td>
-      <td>3</td>
-      <td>Sage, Miss. Dorothy Edith "Dolly"</td>
-      <td>female</td>
-      <td>NaN</td>
-      <td>8</td>
-      <td>2</td>
-      <td>CA. 2343</td>
-      <td>69.5500</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>864</th>
-      <td>865</td>
-      <td>0</td>
-      <td>2</td>
-      <td>Gill, Mr. John William</td>
-      <td>male</td>
-      <td>24.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>233866</td>
-      <td>13.0000</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>865</th>
-      <td>866</td>
-      <td>1</td>
-      <td>2</td>
-      <td>Bystrom, Mrs. (Karolina)</td>
-      <td>female</td>
-      <td>42.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>236852</td>
-      <td>13.0000</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>866</th>
-      <td>867</td>
-      <td>1</td>
-      <td>2</td>
-      <td>Duran y More, Miss. Asuncion</td>
-      <td>female</td>
-      <td>27.0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>SC/PARIS 2149</td>
-      <td>13.8583</td>
-      <td>NaN</td>
-      <td>C</td>
-    </tr>
-    <tr>
-      <th>867</th>
-      <td>868</td>
-      <td>0</td>
-      <td>1</td>
-      <td>Roebling, Mr. Washington Augustus II</td>
-      <td>male</td>
-      <td>31.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>PC 17590</td>
-      <td>50.4958</td>
-      <td>A24</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>868</th>
-      <td>869</td>
-      <td>0</td>
-      <td>3</td>
-      <td>van Melkebeke, Mr. Philemon</td>
-      <td>male</td>
-      <td>NaN</td>
-      <td>0</td>
-      <td>0</td>
-      <td>345777</td>
-      <td>9.5000</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>869</th>
-      <td>870</td>
-      <td>1</td>
-      <td>3</td>
-      <td>Johnson, Master. Harold Theodor</td>
-      <td>male</td>
-      <td>4.0</td>
-      <td>1</td>
-      <td>1</td>
-      <td>347742</td>
-      <td>11.1333</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>870</th>
-      <td>871</td>
-      <td>0</td>
-      <td>3</td>
-      <td>Balkic, Mr. Cerin</td>
-      <td>male</td>
-      <td>26.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>349248</td>
-      <td>7.8958</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>871</th>
-      <td>872</td>
-      <td>1</td>
-      <td>1</td>
-      <td>Beckwith, Mrs. Richard Leonard (Sallie Monypeny)</td>
-      <td>female</td>
-      <td>47.0</td>
-      <td>1</td>
-      <td>1</td>
-      <td>11751</td>
-      <td>52.5542</td>
-      <td>D35</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>872</th>
-      <td>873</td>
-      <td>0</td>
-      <td>1</td>
-      <td>Carlsson, Mr. Frans Olof</td>
-      <td>male</td>
-      <td>33.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>695</td>
-      <td>5.0000</td>
-      <td>B51 B53 B55</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>873</th>
-      <td>874</td>
-      <td>0</td>
-      <td>3</td>
-      <td>Vander Cruyssen, Mr. Victor</td>
-      <td>male</td>
-      <td>47.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>345765</td>
-      <td>9.0000</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>874</th>
-      <td>875</td>
-      <td>1</td>
-      <td>2</td>
-      <td>Abelson, Mrs. Samuel (Hannah Wizosky)</td>
-      <td>female</td>
-      <td>28.0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>P/PP 3381</td>
-      <td>24.0000</td>
-      <td>NaN</td>
-      <td>C</td>
-    </tr>
-    <tr>
-      <th>875</th>
-      <td>876</td>
-      <td>1</td>
-      <td>3</td>
-      <td>Najib, Miss. Adele Kiamie "Jane"</td>
-      <td>female</td>
-      <td>15.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>2667</td>
-      <td>7.2250</td>
-      <td>NaN</td>
-      <td>C</td>
-    </tr>
-    <tr>
-      <th>876</th>
-      <td>877</td>
-      <td>0</td>
-      <td>3</td>
-      <td>Gustafsson, Mr. Alfred Ossian</td>
-      <td>male</td>
-      <td>20.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>7534</td>
-      <td>9.8458</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>877</th>
-      <td>878</td>
-      <td>0</td>
-      <td>3</td>
-      <td>Petroff, Mr. Nedelio</td>
-      <td>male</td>
-      <td>19.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>349212</td>
-      <td>7.8958</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>878</th>
-      <td>879</td>
-      <td>0</td>
-      <td>3</td>
-      <td>Laleff, Mr. Kristo</td>
-      <td>male</td>
-      <td>NaN</td>
-      <td>0</td>
-      <td>0</td>
-      <td>349217</td>
-      <td>7.8958</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>879</th>
-      <td>880</td>
-      <td>1</td>
-      <td>1</td>
-      <td>Potter, Mrs. Thomas Jr (Lily Alexenia Wilson)</td>
-      <td>female</td>
-      <td>56.0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>11767</td>
-      <td>83.1583</td>
-      <td>C50</td>
-      <td>C</td>
-    </tr>
-    <tr>
-      <th>880</th>
-      <td>881</td>
-      <td>1</td>
-      <td>2</td>
-      <td>Shelley, Mrs. William (Imanita Parrish Hall)</td>
-      <td>female</td>
-      <td>25.0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>230433</td>
-      <td>26.0000</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>881</th>
-      <td>882</td>
-      <td>0</td>
-      <td>3</td>
-      <td>Markun, Mr. Johann</td>
-      <td>male</td>
-      <td>33.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>349257</td>
-      <td>7.8958</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>882</th>
-      <td>883</td>
-      <td>0</td>
-      <td>3</td>
-      <td>Dahlberg, Miss. Gerda Ulrika</td>
-      <td>female</td>
-      <td>22.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>7552</td>
-      <td>10.5167</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>883</th>
-      <td>884</td>
-      <td>0</td>
-      <td>2</td>
-      <td>Banfield, Mr. Frederick James</td>
-      <td>male</td>
-      <td>28.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>C.A./SOTON 34068</td>
-      <td>10.5000</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>884</th>
-      <td>885</td>
-      <td>0</td>
-      <td>3</td>
-      <td>Sutehall, Mr. Henry Jr</td>
-      <td>male</td>
-      <td>25.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>SOTON/OQ 392076</td>
-      <td>7.0500</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>885</th>
-      <td>886</td>
-      <td>0</td>
-      <td>3</td>
-      <td>Rice, Mrs. William (Margaret Norton)</td>
-      <td>female</td>
-      <td>39.0</td>
-      <td>0</td>
-      <td>5</td>
-      <td>382652</td>
-      <td>29.1250</td>
-      <td>NaN</td>
-      <td>Q</td>
-    </tr>
-    <tr>
-      <th>886</th>
-      <td>887</td>
-      <td>0</td>
-      <td>2</td>
-      <td>Montvila, Rev. Juozas</td>
-      <td>male</td>
-      <td>27.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>211536</td>
-      <td>13.0000</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>887</th>
-      <td>888</td>
-      <td>1</td>
-      <td>1</td>
-      <td>Graham, Miss. Margaret Edith</td>
-      <td>female</td>
-      <td>19.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>112053</td>
-      <td>30.0000</td>
-      <td>B42</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>888</th>
-      <td>889</td>
-      <td>0</td>
-      <td>3</td>
-      <td>Johnston, Miss. Catherine Helen "Carrie"</td>
-      <td>female</td>
-      <td>NaN</td>
-      <td>1</td>
-      <td>2</td>
-      <td>W./C. 6607</td>
-      <td>23.4500</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>889</th>
-      <td>890</td>
-      <td>1</td>
-      <td>1</td>
-      <td>Behr, Mr. Karl Howell</td>
-      <td>male</td>
-      <td>26.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>111369</td>
-      <td>30.0000</td>
-      <td>C148</td>
-      <td>C</td>
-    </tr>
-    <tr>
-      <th>890</th>
-      <td>891</td>
-      <td>0</td>
-      <td>3</td>
-      <td>Dooley, Mr. Patrick</td>
-      <td>male</td>
-      <td>32.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>370376</td>
-      <td>7.7500</td>
-      <td>NaN</td>
-      <td>Q</td>
-    </tr>
   </tbody>
 </table>
-<p>891 rows × 12 columns</p>
 </div>
 </div>
 
@@ -12780,7 +11939,7 @@ Run the code cell below to remove <strong>Survived</strong> as a feature of the 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Store the &#39;Survived&#39; feature in a new variable and remove it from the dataset</span>
@@ -12788,7 +11947,7 @@ Run the code cell below to remove <strong>Survived</strong> as a feature of the 
 <span class="n">data</span> <span class="o">=</span> <span class="n">full_data</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;Survived&#39;</span><span class="p">,</span> <span class="n">axis</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>
 
 <span class="c1"># Show the new dataset with &#39;Survived&#39; removed</span>
-<span class="n">display</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
 </pre></div>
 
 </div>
@@ -12891,793 +12050,8 @@ Run the code cell below to remove <strong>Survived</strong> as a feature of the 
       <td>NaN</td>
       <td>S</td>
     </tr>
-    <tr>
-      <th>5</th>
-      <td>6</td>
-      <td>3</td>
-      <td>Moran, Mr. James</td>
-      <td>male</td>
-      <td>NaN</td>
-      <td>0</td>
-      <td>0</td>
-      <td>330877</td>
-      <td>8.4583</td>
-      <td>NaN</td>
-      <td>Q</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>7</td>
-      <td>1</td>
-      <td>McCarthy, Mr. Timothy J</td>
-      <td>male</td>
-      <td>54.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>17463</td>
-      <td>51.8625</td>
-      <td>E46</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>8</td>
-      <td>3</td>
-      <td>Palsson, Master. Gosta Leonard</td>
-      <td>male</td>
-      <td>2.0</td>
-      <td>3</td>
-      <td>1</td>
-      <td>349909</td>
-      <td>21.0750</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>9</td>
-      <td>3</td>
-      <td>Johnson, Mrs. Oscar W (Elisabeth Vilhelmina Berg)</td>
-      <td>female</td>
-      <td>27.0</td>
-      <td>0</td>
-      <td>2</td>
-      <td>347742</td>
-      <td>11.1333</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>10</td>
-      <td>2</td>
-      <td>Nasser, Mrs. Nicholas (Adele Achem)</td>
-      <td>female</td>
-      <td>14.0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>237736</td>
-      <td>30.0708</td>
-      <td>NaN</td>
-      <td>C</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>11</td>
-      <td>3</td>
-      <td>Sandstrom, Miss. Marguerite Rut</td>
-      <td>female</td>
-      <td>4.0</td>
-      <td>1</td>
-      <td>1</td>
-      <td>PP 9549</td>
-      <td>16.7000</td>
-      <td>G6</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>12</td>
-      <td>1</td>
-      <td>Bonnell, Miss. Elizabeth</td>
-      <td>female</td>
-      <td>58.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>113783</td>
-      <td>26.5500</td>
-      <td>C103</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>13</td>
-      <td>3</td>
-      <td>Saundercock, Mr. William Henry</td>
-      <td>male</td>
-      <td>20.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>A/5. 2151</td>
-      <td>8.0500</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>14</td>
-      <td>3</td>
-      <td>Andersson, Mr. Anders Johan</td>
-      <td>male</td>
-      <td>39.0</td>
-      <td>1</td>
-      <td>5</td>
-      <td>347082</td>
-      <td>31.2750</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>15</td>
-      <td>3</td>
-      <td>Vestrom, Miss. Hulda Amanda Adolfina</td>
-      <td>female</td>
-      <td>14.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>350406</td>
-      <td>7.8542</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>16</td>
-      <td>2</td>
-      <td>Hewlett, Mrs. (Mary D Kingcome)</td>
-      <td>female</td>
-      <td>55.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>248706</td>
-      <td>16.0000</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>17</td>
-      <td>3</td>
-      <td>Rice, Master. Eugene</td>
-      <td>male</td>
-      <td>2.0</td>
-      <td>4</td>
-      <td>1</td>
-      <td>382652</td>
-      <td>29.1250</td>
-      <td>NaN</td>
-      <td>Q</td>
-    </tr>
-    <tr>
-      <th>17</th>
-      <td>18</td>
-      <td>2</td>
-      <td>Williams, Mr. Charles Eugene</td>
-      <td>male</td>
-      <td>NaN</td>
-      <td>0</td>
-      <td>0</td>
-      <td>244373</td>
-      <td>13.0000</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>18</th>
-      <td>19</td>
-      <td>3</td>
-      <td>Vander Planke, Mrs. Julius (Emelia Maria Vande...</td>
-      <td>female</td>
-      <td>31.0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>345763</td>
-      <td>18.0000</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>19</th>
-      <td>20</td>
-      <td>3</td>
-      <td>Masselmani, Mrs. Fatima</td>
-      <td>female</td>
-      <td>NaN</td>
-      <td>0</td>
-      <td>0</td>
-      <td>2649</td>
-      <td>7.2250</td>
-      <td>NaN</td>
-      <td>C</td>
-    </tr>
-    <tr>
-      <th>20</th>
-      <td>21</td>
-      <td>2</td>
-      <td>Fynney, Mr. Joseph J</td>
-      <td>male</td>
-      <td>35.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>239865</td>
-      <td>26.0000</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>21</th>
-      <td>22</td>
-      <td>2</td>
-      <td>Beesley, Mr. Lawrence</td>
-      <td>male</td>
-      <td>34.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>248698</td>
-      <td>13.0000</td>
-      <td>D56</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>22</th>
-      <td>23</td>
-      <td>3</td>
-      <td>McGowan, Miss. Anna "Annie"</td>
-      <td>female</td>
-      <td>15.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>330923</td>
-      <td>8.0292</td>
-      <td>NaN</td>
-      <td>Q</td>
-    </tr>
-    <tr>
-      <th>23</th>
-      <td>24</td>
-      <td>1</td>
-      <td>Sloper, Mr. William Thompson</td>
-      <td>male</td>
-      <td>28.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>113788</td>
-      <td>35.5000</td>
-      <td>A6</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>24</th>
-      <td>25</td>
-      <td>3</td>
-      <td>Palsson, Miss. Torborg Danira</td>
-      <td>female</td>
-      <td>8.0</td>
-      <td>3</td>
-      <td>1</td>
-      <td>349909</td>
-      <td>21.0750</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>25</th>
-      <td>26</td>
-      <td>3</td>
-      <td>Asplund, Mrs. Carl Oscar (Selma Augusta Emilia...</td>
-      <td>female</td>
-      <td>38.0</td>
-      <td>1</td>
-      <td>5</td>
-      <td>347077</td>
-      <td>31.3875</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>26</th>
-      <td>27</td>
-      <td>3</td>
-      <td>Emir, Mr. Farred Chehab</td>
-      <td>male</td>
-      <td>NaN</td>
-      <td>0</td>
-      <td>0</td>
-      <td>2631</td>
-      <td>7.2250</td>
-      <td>NaN</td>
-      <td>C</td>
-    </tr>
-    <tr>
-      <th>27</th>
-      <td>28</td>
-      <td>1</td>
-      <td>Fortune, Mr. Charles Alexander</td>
-      <td>male</td>
-      <td>19.0</td>
-      <td>3</td>
-      <td>2</td>
-      <td>19950</td>
-      <td>263.0000</td>
-      <td>C23 C25 C27</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>28</th>
-      <td>29</td>
-      <td>3</td>
-      <td>O'Dwyer, Miss. Ellen "Nellie"</td>
-      <td>female</td>
-      <td>NaN</td>
-      <td>0</td>
-      <td>0</td>
-      <td>330959</td>
-      <td>7.8792</td>
-      <td>NaN</td>
-      <td>Q</td>
-    </tr>
-    <tr>
-      <th>29</th>
-      <td>30</td>
-      <td>3</td>
-      <td>Todoroff, Mr. Lalio</td>
-      <td>male</td>
-      <td>NaN</td>
-      <td>0</td>
-      <td>0</td>
-      <td>349216</td>
-      <td>7.8958</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>861</th>
-      <td>862</td>
-      <td>2</td>
-      <td>Giles, Mr. Frederick Edward</td>
-      <td>male</td>
-      <td>21.0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>28134</td>
-      <td>11.5000</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>862</th>
-      <td>863</td>
-      <td>1</td>
-      <td>Swift, Mrs. Frederick Joel (Margaret Welles Ba...</td>
-      <td>female</td>
-      <td>48.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>17466</td>
-      <td>25.9292</td>
-      <td>D17</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>863</th>
-      <td>864</td>
-      <td>3</td>
-      <td>Sage, Miss. Dorothy Edith "Dolly"</td>
-      <td>female</td>
-      <td>NaN</td>
-      <td>8</td>
-      <td>2</td>
-      <td>CA. 2343</td>
-      <td>69.5500</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>864</th>
-      <td>865</td>
-      <td>2</td>
-      <td>Gill, Mr. John William</td>
-      <td>male</td>
-      <td>24.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>233866</td>
-      <td>13.0000</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>865</th>
-      <td>866</td>
-      <td>2</td>
-      <td>Bystrom, Mrs. (Karolina)</td>
-      <td>female</td>
-      <td>42.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>236852</td>
-      <td>13.0000</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>866</th>
-      <td>867</td>
-      <td>2</td>
-      <td>Duran y More, Miss. Asuncion</td>
-      <td>female</td>
-      <td>27.0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>SC/PARIS 2149</td>
-      <td>13.8583</td>
-      <td>NaN</td>
-      <td>C</td>
-    </tr>
-    <tr>
-      <th>867</th>
-      <td>868</td>
-      <td>1</td>
-      <td>Roebling, Mr. Washington Augustus II</td>
-      <td>male</td>
-      <td>31.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>PC 17590</td>
-      <td>50.4958</td>
-      <td>A24</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>868</th>
-      <td>869</td>
-      <td>3</td>
-      <td>van Melkebeke, Mr. Philemon</td>
-      <td>male</td>
-      <td>NaN</td>
-      <td>0</td>
-      <td>0</td>
-      <td>345777</td>
-      <td>9.5000</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>869</th>
-      <td>870</td>
-      <td>3</td>
-      <td>Johnson, Master. Harold Theodor</td>
-      <td>male</td>
-      <td>4.0</td>
-      <td>1</td>
-      <td>1</td>
-      <td>347742</td>
-      <td>11.1333</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>870</th>
-      <td>871</td>
-      <td>3</td>
-      <td>Balkic, Mr. Cerin</td>
-      <td>male</td>
-      <td>26.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>349248</td>
-      <td>7.8958</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>871</th>
-      <td>872</td>
-      <td>1</td>
-      <td>Beckwith, Mrs. Richard Leonard (Sallie Monypeny)</td>
-      <td>female</td>
-      <td>47.0</td>
-      <td>1</td>
-      <td>1</td>
-      <td>11751</td>
-      <td>52.5542</td>
-      <td>D35</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>872</th>
-      <td>873</td>
-      <td>1</td>
-      <td>Carlsson, Mr. Frans Olof</td>
-      <td>male</td>
-      <td>33.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>695</td>
-      <td>5.0000</td>
-      <td>B51 B53 B55</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>873</th>
-      <td>874</td>
-      <td>3</td>
-      <td>Vander Cruyssen, Mr. Victor</td>
-      <td>male</td>
-      <td>47.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>345765</td>
-      <td>9.0000</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>874</th>
-      <td>875</td>
-      <td>2</td>
-      <td>Abelson, Mrs. Samuel (Hannah Wizosky)</td>
-      <td>female</td>
-      <td>28.0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>P/PP 3381</td>
-      <td>24.0000</td>
-      <td>NaN</td>
-      <td>C</td>
-    </tr>
-    <tr>
-      <th>875</th>
-      <td>876</td>
-      <td>3</td>
-      <td>Najib, Miss. Adele Kiamie "Jane"</td>
-      <td>female</td>
-      <td>15.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>2667</td>
-      <td>7.2250</td>
-      <td>NaN</td>
-      <td>C</td>
-    </tr>
-    <tr>
-      <th>876</th>
-      <td>877</td>
-      <td>3</td>
-      <td>Gustafsson, Mr. Alfred Ossian</td>
-      <td>male</td>
-      <td>20.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>7534</td>
-      <td>9.8458</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>877</th>
-      <td>878</td>
-      <td>3</td>
-      <td>Petroff, Mr. Nedelio</td>
-      <td>male</td>
-      <td>19.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>349212</td>
-      <td>7.8958</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>878</th>
-      <td>879</td>
-      <td>3</td>
-      <td>Laleff, Mr. Kristo</td>
-      <td>male</td>
-      <td>NaN</td>
-      <td>0</td>
-      <td>0</td>
-      <td>349217</td>
-      <td>7.8958</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>879</th>
-      <td>880</td>
-      <td>1</td>
-      <td>Potter, Mrs. Thomas Jr (Lily Alexenia Wilson)</td>
-      <td>female</td>
-      <td>56.0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>11767</td>
-      <td>83.1583</td>
-      <td>C50</td>
-      <td>C</td>
-    </tr>
-    <tr>
-      <th>880</th>
-      <td>881</td>
-      <td>2</td>
-      <td>Shelley, Mrs. William (Imanita Parrish Hall)</td>
-      <td>female</td>
-      <td>25.0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>230433</td>
-      <td>26.0000</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>881</th>
-      <td>882</td>
-      <td>3</td>
-      <td>Markun, Mr. Johann</td>
-      <td>male</td>
-      <td>33.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>349257</td>
-      <td>7.8958</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>882</th>
-      <td>883</td>
-      <td>3</td>
-      <td>Dahlberg, Miss. Gerda Ulrika</td>
-      <td>female</td>
-      <td>22.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>7552</td>
-      <td>10.5167</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>883</th>
-      <td>884</td>
-      <td>2</td>
-      <td>Banfield, Mr. Frederick James</td>
-      <td>male</td>
-      <td>28.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>C.A./SOTON 34068</td>
-      <td>10.5000</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>884</th>
-      <td>885</td>
-      <td>3</td>
-      <td>Sutehall, Mr. Henry Jr</td>
-      <td>male</td>
-      <td>25.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>SOTON/OQ 392076</td>
-      <td>7.0500</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>885</th>
-      <td>886</td>
-      <td>3</td>
-      <td>Rice, Mrs. William (Margaret Norton)</td>
-      <td>female</td>
-      <td>39.0</td>
-      <td>0</td>
-      <td>5</td>
-      <td>382652</td>
-      <td>29.1250</td>
-      <td>NaN</td>
-      <td>Q</td>
-    </tr>
-    <tr>
-      <th>886</th>
-      <td>887</td>
-      <td>2</td>
-      <td>Montvila, Rev. Juozas</td>
-      <td>male</td>
-      <td>27.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>211536</td>
-      <td>13.0000</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>887</th>
-      <td>888</td>
-      <td>1</td>
-      <td>Graham, Miss. Margaret Edith</td>
-      <td>female</td>
-      <td>19.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>112053</td>
-      <td>30.0000</td>
-      <td>B42</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>888</th>
-      <td>889</td>
-      <td>3</td>
-      <td>Johnston, Miss. Catherine Helen "Carrie"</td>
-      <td>female</td>
-      <td>NaN</td>
-      <td>1</td>
-      <td>2</td>
-      <td>W./C. 6607</td>
-      <td>23.4500</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>889</th>
-      <td>890</td>
-      <td>1</td>
-      <td>Behr, Mr. Karl Howell</td>
-      <td>male</td>
-      <td>26.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>111369</td>
-      <td>30.0000</td>
-      <td>C148</td>
-      <td>C</td>
-    </tr>
-    <tr>
-      <th>890</th>
-      <td>891</td>
-      <td>3</td>
-      <td>Dooley, Mr. Patrick</td>
-      <td>male</td>
-      <td>32.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>370376</td>
-      <td>7.7500</td>
-      <td>NaN</td>
-      <td>Q</td>
-    </tr>
   </tbody>
 </table>
-<p>891 rows × 11 columns</p>
 </div>
 </div>
 
@@ -13701,7 +12075,7 @@ Run the code cell below to remove <strong>Survived</strong> as a feature of the 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">accuracy_score</span><span class="p">(</span><span class="n">truth</span><span class="p">,</span> <span class="n">pred</span><span class="p">):</span>
@@ -13755,7 +12129,7 @@ The <code>predictions_0</code> function below will always predict that a passeng
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">predictions_0</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
@@ -13792,7 +12166,7 @@ The <code>predictions_0</code> function below will always predict that a passeng
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">outcomes</span><span class="p">,</span> <span class="n">predictions</span><span class="p">)</span>
@@ -14080,7 +12454,7 @@ Fill in the missing code below so that the function will make this prediction.<b
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">predictions_1</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
@@ -14123,7 +12497,7 @@ Fill in the missing code below so that the function will make this prediction.<b
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">outcomes</span><span class="p">,</span> <span class="n">predictions</span><span class="p">)</span>
@@ -14172,7 +12546,7 @@ Run the code cell below to plot the survival outcomes of male passengers based o
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[128]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">vs</span><span class="o">.</span><span class="n">survival_stats</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">outcomes</span><span class="p">,</span> <span class="s1">&#39;Age&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;Sex == &#39;female&#39;&quot;</span><span class="p">])</span>
@@ -14413,7 +12787,7 @@ Fill in the missing code below so that the function will make this prediction.<b
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[126]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">predictions_2</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
@@ -14455,7 +12829,7 @@ Fill in the missing code below so that the function will make this prediction.<b
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[127]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">outcomes</span><span class="p">,</span> <span class="n">predictions</span><span class="p">)</span>
@@ -14471,7 +12845,7 @@ Fill in the missing code below so that the function will make this prediction.<b
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Predictions have an accuracy of 76.88%.
+<pre>Predictions have an accuracy of 79.35%.
 </pre>
 </div>
 </div>
@@ -14506,10 +12880,10 @@ Fill in the missing code below so that the function will make this prediction.<b
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[187]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">vs</span><span class="o">.</span><span class="n">survival_stats</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">outcomes</span><span class="p">,</span> <span class="s1">&#39;SibSp&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;Sex == &#39;male&#39;&quot;</span><span class="p">,</span><span class="s2">&quot;Age &lt; 10&quot;</span><span class="p">])</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">vs</span><span class="o">.</span><span class="n">survival_stats</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">outcomes</span><span class="p">,</span> <span class="s1">&#39;Parch&#39;</span><span class="p">,</span> <span class="p">[])</span>
 </pre></div>
 
 </div>
@@ -14524,202 +12898,204 @@ Fill in the missing code below so that the function will make this prediction.<b
 
 
 <div class="output_png output_subarea ">
-<img src="data:image/png;base64,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
-fPHF7L333uy+++5MmjRpdZ7WLhnkkqQ+95a3vIUVK1awcOHC191+4YUX8o53vIMHHniA9773vTz+
-+OOdzr9s2TL23XdfZs2axUEHHcQVV1wBwEc+8hFOPvlk7r//fk466STOPvts9t9/f8aNG8fFF1/M
-zJkz2XHHHV/X1mc/+1l+9KMfMWvWLG655ZYea1+2bBn77LMPs2bN4pxzzmHatGksW7YMgBtuuIET
-TjjhddOPHz+eG2+8ceX1G2+8kfHjxzN16lTmzp3Lvffey8yZM5kxYwZ33313z09eLxnkkqR+c/fd
-d/OBD3wAgKOPPprNN9+80+nWX3/9lT3fvfbai8ceewyAe+65h/e///0ATJgwgV/+8pc9LvOAAw7g
-lFNO4YorrmDFihU9Tt/S0sLf/d3fATBgwACOPPJIfvjDH/Lqq69y2223ccwxx7xu+j322IOFCxfy
-5JNPMmvWLDbffHO23357pk6dytSpU9ljjz3Yc889efDBB5k7d26Py+8tt5FLkvrcI488QktLC1tv
-vTVz5szp9fwDBw5cOaK7paWFV199dZVrueyyy5g2bRq33XYbe+21FzNmzGDAgAErB+MBr9sFbNCg
-Qa/bLn7CCSfwjW98gy222ILW1lYGDx78hmUcd9xxTJkyhaeeeorx48cDxX7in/rUpzjjjDNWufYq
-DPJ1VFzYN4NhclLPg2AkrVsWLVrEmWeeyVlnnfWG3asOOuggrrvuOs477zzuuOMOnn322V61vf/+
-+zN58mQmTJjAtddey4EHHgjA4MGDWbp0aafzPPzww+yzzz7ss88+3HHHHTzxxBMMHz6cSy+9lNde
-e4358+dz7733drnMgw8+mH/4h3/giiuueMNq9Tbjx4/ntNNOY/Hixdx1110AHHHEEZx//vmcdNJJ
-bLLJJsyfP5+BAwey9dZb9+ox98QglySttpdeeonRo0ezfPlyBgwYwIQJE/jYxz72hukmTZrEiSee
-yMiRI9l///0ZNmxYr5bz9a9/nVNPPZWLL76YIUOG8J3vfAcoes2nnXYaX/va15gyZcrrtpN/4hOf
-YO7cuWQmhx56KKNGjQJgxIgR7LLLLuy8887sueeeXS6zpaWFsWPHctVVV3H11Vd3Os3IkSNZunQp
-2223Hdtssw0Ahx9+OHPmzGG//fYDikF011xzTZ8HeXQ1YnBN0tramp6PvG/ZI5fWHnPmzGHnnXdu
-dhlaRZ29fhExIzMr7bPnYDdJkmrMIJckqcYMckmSaswglySpxgxySZJqzCCXJKnGDHJJUp/43Oc+
-x8iRI9l9990ZPXo006ZNW+02b7nlFr7whS/0QXXFftxrIw8II0lrmb46TkSbKseLuOeee7j11lu5
-77772GCDDVi8eDGvvPJKpfZfffVVBgzoPI7GjRvHuHHjelXvusYeuSRptS1YsICtttqKDTbYAICt
-ttqKbbfdduWpPgGmT5/OmDFjgOJUnxMmTOCAAw5gwoQJ7LvvvjzwwAMr2xszZgzTp09febrR559/
-nh122GHl8dGXLVvG9ttvz/Lly3n44Yc58sgj2WuvvTjwwAN58MEHAXj00UfZb7/92G233TjvvPP6
-8dnoXwa5JGm1HX744TzxxBO87W1v48Mf/vDK4413Z/bs2fzkJz/h+uuvf92pQBcsWMCCBQtobf3r
-gc3e9KY3MXr06JXt3nrrrRxxxBEMHDiQ008/na9//evMmDGDSy65hA9/+MMATJw4kQ996EP8/ve/
-X3nY1LWRQS5JWm2bbLIJM2bM4PLLL2fIkCGMHz+eq666qtt5xo0bx4YbbgjA8ccfz5QpU4DifN7H
-HnvsG6YfP348N9xwAwCTJ09m/PjxvPjii/z617/muOOOY/To0ZxxxhksWLAAgF/96leceOKJQHHK
-07WV28glSX2ipaWFMWPGMGbMGHbbbTeuvvrq150utP2pQgE23njjlZe32247ttxyS+6//35uuOEG
-Lrvssje0P27cOM4991yeeeYZZsyYwSGHHMKyZcvYbLPNmDlzZqc1dTz72trIHrkkabU99NBDzJ07
-d+X1mTNnssMOOzB8+HBmzJgBwHe/+91u2xg/fjxf/OIXef7559l9993fcP8mm2zC3nvvzcSJExk7
-diwtLS1suummjBgxgptuugkozgE+a9YsAA444AAmT54MwLXXXtsnj3NNZJBLklbbiy++yMknn8wu
-u+zC7rvvzuzZs7nggguYNGkSEydOpLW1lZaWlm7bOPbYY5k8eTLHH398l9OMHz+ea665hvHjx6+8
-7dprr+XKK69k1KhRjBw5kh/84AcAfPWrX+Wb3/wmu+22G/Pnz++bB7oG8jSm6yhPYyqtPTyNab15
-GlNJktZhBrkkSTVmkEuSVGMGuSStBeow3klv1Bevm0EuSTU3aNAglixZYpjXTGayZMkSBg0atFrt
-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
-e62x5UiSpN6oEuQvZ+bXGl6JJEnqtSpB/tWImARMBf7SdmNm3tewqiRJUiVVgnw3YAJwCH9dtZ7l
-dUmS1ER+sIOQAAALMElEQVRVgvw44C3tT2UqSZLWDFWO7PYHYLNGFyJJknqvSo98M+DBiPgtr99G
-7u5nkiQ1WZUgn9TwKiRJ0iqpcj7yu/qjEEmS1HtVjuy2lGKUOsD6wEBgWWZu2sjCJElSz6r0yAe3
-XY6IAI4B9l3dBUdECzAdmJ+ZY1e3PUmS1kVVRq2vlIWbgSP6YNkTgTl90I4kSeusKqvW39fu6npA
-K/Dy6iw0IoYCRwOfAz62Om1JkrQuqzJqvf15yV8FHqNYvb46vgJ8Ehjc04SSJKlrVbaR9+l5ySNi
-LLAwM2dExJhupjsdOB1g2LBhfVmCJElrjS6DPCI+0818mZkXreIyDwDGRcS7gEHAphFxTWZ+oMMC
-LgcuB2htbc03NiNJkrob7Laskz+AfwT+ZVUXmJmfysyhmTkcOAH4WccQlyRJ1XTZI8/ML7VdjojB
-FKPMTwUmA1/qaj5JktR/ut1GHhFbUIwqPwm4GtgzM5/tq4Vn5p3AnX3VniRJ65rutpFfDLyPYjv1
-bpn5Yr9VJUmSKuluG/nHgW2B84AnI+KF8m9pRLzQP+VJkqTudLeNvFdHfZMkSf3PsJYkqcYMckmS
-aswglySpxgxySZJqzCCXJKnGDHJJkmrMIJckqcYMckmSaswglySpxgxySZJqzCCXJKnGDHJJkmrM
-IJckqcYMckmSaswglySpxgxySZJqzCCXJKnGDHJJkmrMIJckqcYMckmSaswglySpxgxySZJqzCCX
-JKnGDHJJkmrMIJckqcYMckmSaswglySpxgxySZJqzCCXJKnGDHJJkmrMIJckqcYMckmSaswglySp
-xgxySZJqzCCXJKnGDHJJkmrMIJckqcYMckmSaswglySpxgxySZJqzCCXJKnGDHJJkmrMIJckqcYM
-ckmSaswglySpxvo9yCNi+4j4eUTMjogHImJif9cgSdLaYkATlvkq8PHMvC8iBgMzIuLHmTm7CbVI
-klRr/d4jz8wFmXlfeXkpMAfYrr/rkCRpbdCMHvlKETEc2AOY1sl9pwOnAwwbNqxf65JWiuibdjL7
-pp21nc+31GtNG+wWEZsA3wU+mpkvdLw/My/PzNbMbB0yZEj/FyhJUg00JcgjYiBFiF+bmd9rRg2S
-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
+<img src="data:image/png;base64,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
+D48++mib869du5aDDjqI+fPnc/jhh3PllVcC8NGPfpRTTz2V3//+97z3ve/lnHPO4ZBDDmHixIlc
+fPHFzJs3j9e97nUbtPW5z32OH//4x8yfP59Zs2Z1WvvatWs58MADmT9/Pueeey533303a9euBeC6
+665j8uTJG0w/adIkZsyYsf7+jBkzmDRpErfddhuLFy/mnnvuYd68ecydO5fZs2d3/uR1gQEvSRoQ
+Zs+ezfve9z4Ajj32WLbbbrs2p9t8883X95Tf/OY388gjjwBw5513cvLJJwNwyimn8Ktf/arTZR56
+6KGcdtppXHnllaxbt67T6Zuamvj7v/97AAYNGsQxxxzDD3/4Q1566SVuvvlmjjvuuA2m32+//Vix
+YgV//vOfmT9/Pttttx277bYbt912G7fddhv77bcf+++/P/fddx+LFy/udPld4T54SVKfeuihh2hq
+amKnnXZi0aJFXZ5/8ODB648wb2pq4qWXXup2LZdffjl33303N998M29+85uZO3cugwYNWn8QILDB
+T9WGDBmywX73yZMn8/Wvf53tt9+e5uZmhg0b9qplnHDCCcycOZPHHnuMSZMmAcXv3M877zzOPPPM
+btfeGXvwrUU07iZJm7iVK1dy1llncfbZZ7/qZ2CHH3443/3udwG49dZbeeqpp7rU9iGHHML06dMB
+uPbaaznssMMAGDZsGKtXr25zngcffJADDzyQz33ucwwfPpwlS5YwatQo5s2bx8svv8ySJUu45557
+2l3m2972Nu69916uvPLKV22ebzFp0iSmT5/OzJkz1++zP/roo/n2t7/NmjVrAFi2bNmrdln0lD14
+SVJDPffcc4wbN44XX3yRQYMGccopp/Cxj33sVdNNnTqVk046iTFjxnDIIYew++67d2k5X/va1zj9
+9NO5+OKLGT58ON/5zneAopf9wQ9+kK9+9avMnDlzg/3wn/jEJ1i8eDGZyZFHHsnYsWMBGD16NHvv
+vTd77bUX+++/f7vLbGpqYsKECVx99dVMmzatzWnGjBnD6tWr2XXXXRkxYgQARx11FIsWLeLggw8G
+ioP3rrnmGnbaaacurXNHor2jFDcGzc3N2evXg29kT3sjfq4lbZwWLVrEXnvt1d9lqJvaev0iYm5m
+dvrbQjfRS5JUQQa8JEkVZMBLklRBBrwkSRVkwEuSVEEGvCRJFWTAS5Ia6sILL2TMmDHsu+++jBs3
+jrvvvrvHbc6aNYuLLrqoF6orfoNeRZ7oRpI2IXFB757rI6d2fH6PO++8k5tuuol7772XLbbYgiee
+eIK//vWvdbX90ksvMWhQ2zE1ceJEJk6c2OV6NyX24CVJDbN8+XJ23HFHtthiCwB23HFHdtlll/WX
+UwWYM2cO48ePB4rLqZ5yyikceuihnHLKKRx00EEsWLBgfXvjx49nzpw56y/p+swzz7DHHnusP3f8
+2rVr2W233XjxxRd58MEHOeaYY3jzm9/MYYcdxn333QfAww8/zMEHH8w+++zDZz7zmT58NvqWAS9J
+apijjjqKJUuW8IY3vIEPf/jD/OIXv+h0noULF/LTn/6U733vextcbnX58uUsX76c5uZXTuK2zTbb
+MG7cuPXt3nTTTRx99NEMHjyYM844g6997WvMnTuXSy65hA9/+MMATJkyhQ996EP84Q9/WH/q2Coy
+4CVJDbP11lszd+5crrjiCoYPH86kSZO4+uqrO5xn4sSJDB06FIATTzyRmTNnAsW11I8//vhXTT9p
+0iSuu+46AKZPn86kSZNYs2YNv/nNbzjhhBMYN24cZ555JsuXLwfg17/+NSeddBJQXFa2qtwHL0lq
+qKamJsaPH8/48ePZZ599mDZt2gaXZK29HCvAVltttX541113ZYcdduD3v/891113HZdffvmr2p84
+cSKf/vSnefLJJ5k7dy5HHHEEa9euZdttt2XevHlt1tT6SnZVZA9ektQw999/P4sXL15/f968eeyx
+xx6MGjWKuXPnAnDDDTd02MakSZP40pe+xDPPPMO+++77qse33nprDjjgAKZMmcKECRNoamriNa95
+DaNHj+b6668Hiuuvz58/H4BDDz10g8vKVpUBL0lqmDVr1nDqqaey9957s++++7Jw4ULOP/98pk6d
+ypQpU2hubqapqanDNo4//nimT5/OiSee2O40kyZN4pprrmHSpEnrx1177bVcddVVjB07ljFjxvCD
+H/wAgK985Stcdtll7LPPPixbtqx3VnQA8nKxrXm5WEkV4uViN25eLlaSJG3AgJckqYIMeEmSKsiA
+l6SK25iPtdqU9fR1M+AlqcKGDBnCqlWrDPmNTGayatUqhgwZ0u02PNGNJFXYyJEjWbp0KStXruzv
+UtRFQ4YMYeTIkd2e34CXpAobPHgwo0eP7u8y1A/cRC9JUgUZ8JIkVZABL0lSBTU84COiKSJ+FxE3
+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
 "
 >
 </div>
@@ -14744,7 +13120,7 @@ Make sure to keep track of the various features and conditions you tried before 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[190]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">predictions_3</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
@@ -14786,7 +13162,7 @@ Make sure to keep track of the various features and conditions you tried before 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[191]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">outcomes</span><span class="p">,</span> <span class="n">predictions</span><span class="p">)</span>
@@ -14816,7 +13192,15 @@ Make sure to keep track of the various features and conditions you tried before 
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>81.14%</p>
+<p>81.14%
+What steps did you take when trying to solve this problem?
+Ans: I tried to find data where survival rate was High. First the data was separated into females and males;
+then Age for better survival rate. then I looked at class and found class 3 had minimum survival rate so I filtered out data on basis of class. Then I looked at SibSp so found that SibSp for males age &lt;10 survival rate was very low for more SibSp;</p>
+<p>Did you try any variables that didn't yield the expected results?
+Ans: I tried Parch but could not find good survival rate. I tried SibSp filter for all males but accuracy got reduced.
+find
+Did you have a working hypothesis you tested, or did you "attack the data" right away?
+Ans: I looked into data and tried to find working pattern. I divided the data and into segments and tried different cases; such as Parch in females, SibSp in females and males respectively.</p>
 
 </div>
 </div>
